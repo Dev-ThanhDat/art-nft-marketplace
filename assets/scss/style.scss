@@ -1,0 +1,38 @@
+@import "./variables";
+@import "./mixin";
+@import "./reset";
+@import "./global";
+
+// Header
+@import "./header";
+
+// Homepage
+@import "./Homepage/hero";
+@import "./Homepage/trending";
+@import "./Homepage/creators";
+@import "./Homepage/browse";
+@import "./Homepage/discover";
+@import "./Homepage/highlight";
+@import "./Homepage/works";
+@import "./Homepage/subscribe";
+
+// Account
+@import "./CreateAccount/account";
+
+// Connect
+@import "./ConnectWallet/connect";
+
+// Artist
+@import "./ArtistPage/artist";
+
+// Details
+@import "./Details/details";
+
+// Search
+@import "./Marketplace/search";
+
+// Rankings
+@import "./Rankings/rankings";
+
+// Footer
+@import "./footer";
