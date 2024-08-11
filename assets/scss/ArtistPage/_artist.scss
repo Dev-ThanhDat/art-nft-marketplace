@@ -1,0 +1,251 @@
+.artist {
+  &-bg {
+    width: 100%;
+    height: 382px;
+    background: linear-gradient(
+        180deg,
+        rgba(151, 71, 255, 0) 21.88%,
+        #9747ff 95.31%
+      ),
+      url("/assets/images/Photo 4.png") center bottom / cover no-repeat;
+  }
+
+  &-avatar {
+    width: 120px;
+    border-radius: 20px;
+    border: 2px solid $color-grey2b;
+    margin-top: -60px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    &:hover {
+      @include scale();
+    }
+  }
+
+  &-info {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    color: $color-white;
+  }
+
+  &-heading {
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+
+  &-stats-list {
+    width: 510px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &-stats-item {
+    text-transform: capitalize;
+    h4 {
+      font-weight: 700;
+      font-family: $font-secondary;
+      font-size: 28px;
+      line-height: 140%;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+    }
+  }
+
+  &-text {
+    font-weight: 700;
+    font-family: $font-secondary;
+    color: $color-grey85;
+    text-transform: capitalize;
+    font-size: 22px;
+    line-height: 160%;
+    margin-bottom: 10px;
+  }
+
+  &-bio {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+
+    p {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+    }
+  }
+
+  &-links-list {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+  }
+
+  &-link-item {
+    img {
+      width: 32px;
+    }
+  }
+
+  &-info-right {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 20px;
+  }
+
+  &-btn {
+    color: $color-white;
+    background-color: $color-purplea2;
+    padding: 19px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    transition: all 0.2s linear;
+
+    &:hover {
+      @include scale;
+    }
+
+    img {
+      width: 20px;
+    }
+
+    span {
+      font-weight: 600;
+      line-height: 140%;
+    }
+  }
+
+  &-btn2 {
+    padding: 19px 30px;
+    background-color: transparent;
+    border: 2px solid $color-purplea2;
+  }
+
+  &-frame {
+    padding-top: 10px;
+    border-top: 1px solid $color-grey3b;
+  }
+
+  &-frame-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-frame-item {
+    width: 33.33%;
+    color: $color-grey85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 16px;
+    padding: 14px 0;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &.active {
+      border-bottom: 2px solid $color-grey85;
+      color: $color-white;
+    }
+    &.active .artist-frame-number {
+      background-color: $color-grey85;
+    }
+  }
+
+  &-frame-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  &-frame-number {
+    font-weight: 400;
+    line-height: 140%;
+    padding: 5px 10px;
+    color: $color-white;
+    border-radius: 20px;
+    background-color: $color-grey3b;
+  }
+
+  &-cards {
+    padding: 80px 0;
+  }
+
+  &-list {
+    grid-row-gap: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &-info {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+
+    &-frame-title {
+      font-size: 16px;
+    }
+  }
+
+  /* Mobile: width < 740px */
+  @media only screen and (max-width: 46.1875em) {
+    &-bg {
+      height: 250px;
+    }
+
+    &-avatar {
+      margin: -60px auto 0;
+    }
+
+    &-heading {
+      font-size: 28px;
+    }
+
+    &-stats-list {
+      width: 100%;
+    }
+
+    &-stats-item {
+      h4 {
+        font-size: 22px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    &-bio {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &-info-right {
+      flex-direction: column;
+      gap: 20px 0;
+    }
+
+    &-btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    &-frame-number {
+      display: none;
+    }
+
+    &-cards {
+      padding: 40px 0;
+    }
+  }
+}

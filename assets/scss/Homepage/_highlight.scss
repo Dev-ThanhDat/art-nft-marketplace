@@ -1,0 +1,121 @@
+.highlight {
+  padding: 360px 0 60px;
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%),
+    url("/assets/images/Photo 6.png") center / cover no-repeat;
+
+  &-main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &-card {
+    padding: 10px 20px;
+    background-color: $color-grey3b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0 12px;
+    color: $color-white;
+    border-radius: 20px;
+
+    img {
+      width: 24px;
+      border-radius: 120px;
+      transition: all 0.2s linear;
+      &:hover {
+        @include scale();
+      }
+    }
+  }
+
+  &-heading {
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: $color-white;
+  }
+
+  &-btn {
+    background-color: $color-white;
+    color: $color-grey2b;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  &-timer {
+    color: $color-white;
+    width: 295px;
+    padding: 30px;
+    background-color: rgba($color-grey3b, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+  }
+
+  &-timer-text {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    margin-bottom: 10px;
+  }
+
+  &-timer-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-timer-item {
+    h3 {
+      font-family: $font-secondary;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 120%;
+      margin-bottom: 5px;
+    }
+
+    span {
+      font-family: $font-secondary;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 110%;
+    }
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    &-heading {
+      font-size: 42px;
+      line-height: 120%;
+    }
+  }
+
+  /* Mobile: width < 740px */
+  @media only screen and (max-width: 46.1875em) {
+    padding: 120px 0 40px;
+
+    &-main {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px 0;
+    }
+
+    &-timer {
+      width: 100%;
+    }
+
+    &-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
