@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Art NFT Marketplace - Marketplace</title>
+
+    <!-- Logo -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Logo.png"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header Start -->
+      <header class="header">
+        <a
+          class="header-logo"
+          href="./index.html"
+        >
+          <img
+            src="./assets/images/Logo.png"
+            alt=""
+          />
+          <span>NFT Marketplace</span>
+        </a>
+
+        <div class="header-menu js-menu">
+          <i class="fa-sharp fa-solid fa-xmark header-close js-close"></i>
+          <ul class="header-nav">
+            <li class="header-link">
+              <a href="./Marketplace.html">Marketplace</a>
+            </li>
+            <li class="header-link">
+              <a href="./Rankings.html">Rankings</a>
+            </li>
+            <li class="header-link">
+              <a href="./ConnectWallet.html">Connect a wallet</a>
+            </li>
+          </ul>
+
+          <a
+            class="header-signup btn"
+            href="./CreateAccount.html"
+          >
+            <img
+              src="./assets/images/Icon-User.png"
+              alt=""
+              class="header-user"
+            />
+            <span>Sign Up</span>
+          </a>
+        </div>
+
+        <img
+          src="./assets/images/Icon-Menu.png"
+          alt=""
+          class="header-bar js-bar"
+        />
+      </header>
+      <!-- Header End -->
+
+      <!-- Search Start -->
+      <section class="search">
+        <div class="container">
+          <h2 class="search-heading">Browse Marketplace</h2>
+          <p class="search-desc">
+            Search through more than 50k NFTs on the NFT Marketplace.
+          </p>
+          <form class="search-form">
+            <input
+              type="text"
+              placeholder="search your favourite NFTs"
+            />
+            <button class="search-btn">
+              <img
+                src="./assets/images/Icon-Find.png"
+                alt=""
+              />
+            </button>
+          </form>
+        </div>
+
+        <div class="search-frame">
+          <div class="container">
+            <div class="search-frame-list">
+              <div class="artist-frame-item search-frame-item active">
+                <p class="artist-frame-title">NFTs</p>
+                <p class="artist-frame-number">302</p>
+              </div>
+              <div class="artist-frame-item search-frame-item">
+                <p class="artist-frame-title">Collections</p>
+                <p class="artist-frame-number">67</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-cards">
+          <div class="container">
+            <div class="discover-list search-list">
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Photo 7.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Magic Mushroom 0325</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 7.png"
+                      alt=""
+                    />
+                    <span>Shroomie</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 9.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Happy Robot 032</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 20.png"
+                      alt=""
+                    />
+                    <span>BeKind2Robots</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 13.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Happy Robot 024</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 20.png"
+                      alt=""
+                    />
+                    <span>BeKind2Robots</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 29.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Designer Bear</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 6.png"
+                      alt=""
+                    />
+                    <span>Mr Fox</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 17.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Colorful Dog 0356</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 11.png"
+                      alt=""
+                    />
+                    <span>Keepitreal</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 31.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Dancing Robot 0312</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 8.png"
+                      alt=""
+                    />
+                    <span>Robotica</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Photo 18.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Cherry Blossom Girl 035</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 21.png"
+                      alt=""
+                    />
+                    <span>MoonDancer</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 14.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Space Travel</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 18.png"
+                      alt=""
+                    />
+                    <span>NebulaKid</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 15.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Sunset Dimension</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 10.png"
+                      alt=""
+                    />
+                    <span>Animakid</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 16.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Desert Walk</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 24.png"
+                      alt=""
+                    />
+                    <span>Catch 22</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 35.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">IceCream Ape 0324</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 22.png"
+                      alt=""
+                    />
+                    <span>Ice Ape Club</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="./Details.html"
+                class="discover-item"
+              >
+                <img
+                  src="./assets/images/Avatar 17.png"
+                  alt=""
+                  class="discover-img"
+                />
+                <div class="discover-content">
+                  <h5 class="discover-title">Colorful Dog 0344</h5>
+                  <div class="discover-info">
+                    <img
+                      src="./assets/images/Avatar 36.png"
+                      alt=""
+                    />
+                    <span>PuppyPower</span>
+                  </div>
+                  <div class="discover-other">
+                    <div class="discover-price">
+                      <span>Price</span>
+                      <p>1.63 ETH</p>
+                    </div>
+                    <div class="discover-highest">
+                      <span>Highest Bid</span>
+                      <p>0.33 wETH</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Search End -->
+
+      <!-- Footer Start -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-info">
+              <a
+                href="./index.html"
+                class="footer-heading footer-info-heading"
+              >
+                <img
+                  src="./assets/images/Logo.png"
+                  alt=""
+                />
+                <span>NFT Marketplace</span>
+              </a>
+              <p class="footer-info-desc footer-text">
+                NFT marketplace UI created with Anima for Figma.
+              </p>
+              <p class="footer-info-text footer-text">Join our community</p>
+              <div class="footer-info-icon">
+                <a href="#!">
+                  <img
+                    src="./assets/images/Icon-DiscordLogo.png"
+                    alt=""
+                  />
+                </a>
+                <a href="#!">
+                  <img
+                    src="./assets/images/Icon-YoutubeLogo.png"
+                    alt=""
+                  />
+                </a>
+                <a href="#!">
+                  <img
+                    src="./assets/images/Icon-TwitterLogo.png"
+                    alt=""
+                  />
+                </a>
+                <a href="#!">
+                  <img
+                    src="./assets/images/Icon-InstagramLogo.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer-explore">
+              <h5 class="footer-heading">Explore</h5>
+              <a
+                href="./Marketplace.html"
+                class="footer-explore-text footer-text"
+                >Marketplace</a
+              >
+              <a
+                href="./Rankings.html"
+                class="footer-explore-text footer-text"
+                >Rankings</a
+              >
+              <a
+                href="./ConnectWallet.html"
+                class="footer-explore-text footer-text"
+                >Connect a wallet</a
+              >
+            </div>
+            <div class="footer-subscribe">
+              <h5 class="footer-heading">Join our weekly digest</h5>
+              <p class="footer-subscribe-text footer-text">
+                Get exclusive promotions & updates straight to your inbox.
+              </p>
+              <form class="footer-subscribe-form">
+                <input
+                  type="text"
+                  placeholder="Enter your email here"
+                  class="footer-subscribe-input"
+                />
+                <button class="footer-subscribe-btn btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End -->
+    </div>
+
+    <!-- JavaScript Start -->
+    <script src="./assets/js/main.js"></script>
+    <!-- JavaScript End -->
+  </body>
+</html>

@@ -1,0 +1,93 @@
+.account {
+  display: flex;
+  align-items: center;
+  gap: 0 60px;
+
+  &-bg {
+    width: 610px;
+    height: 691px;
+    object-fit: cover;
+  }
+
+  &-form {
+    width: 330px;
+  }
+
+  &-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    margin-bottom: 30px;
+  }
+
+  &-input-item {
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    padding: 12px 20px;
+    border-radius: 20px;
+
+    img {
+      width: 20px;
+    }
+
+    input {
+      font-weight: 400;
+      color: $color-grey2b;
+      font-size: 16px;
+      line-height: 140%;
+      flex: 1;
+
+      &::placeholder {
+        color: $color-grey2b;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &-item-btn {
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 20px;
+    background-color: $color-purplea2;
+    color: $color-white;
+    font-weight: 600;
+    line-height: 140%;
+    transition: all 0.2s linear;
+
+    &:hover {
+      @include scale();
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 0 40px;
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    &-bg {
+      width: 397px;
+    }
+  }
+
+  /* Mobile: width < 740px */
+  @media only screen and (max-width: 46.1875em) {
+    flex-direction: column;
+
+    &-bg {
+      width: 100%;
+      height: 232px;
+    }
+
+    &-content {
+      padding: 30px;
+      text-align: center;
+      width: 100%;
+    }
+
+    &-form {
+      width: 100%;
+    }
+  }
+}

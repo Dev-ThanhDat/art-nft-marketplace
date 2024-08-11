@@ -1,0 +1,138 @@
+.header {
+  padding: 20px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-white;
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    color: $color-white;
+
+    img {
+      max-width: 32px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &-close {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: $color-grey2b;
+    font-size: 40px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    &:hover {
+      color: $color-purplea2;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+  }
+
+  &-menu.active {
+    transform: translateX(0);
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+  }
+  &-link {
+    font-weight: 600;
+    a {
+      color: $color-white;
+      transition: all 0.2s linear;
+      &:hover {
+        color: $color-purplea2;
+      }
+    }
+  }
+
+  &-signup {
+    padding: 19px 30px;
+  }
+
+  &-user {
+    width: 20px;
+  }
+
+  &-bar {
+    width: 24px;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media screen and (max-width: 1023px) {
+    &-close {
+      display: inline-block;
+    }
+
+    &-menu {
+      flex-direction: column;
+      justify-content: center;
+      background-color: $color-white;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      width: 70%;
+      gap: 50px 0;
+      transition: all 0.2s linear;
+      transform: translateX(100%);
+    }
+
+    &-nav {
+      flex-direction: column;
+      gap: 50px 0;
+    }
+    &-link {
+      font-weight: 600;
+      font-size: 25px;
+      a {
+        color: $color-grey2b;
+      }
+    }
+
+    &-signup {
+      border: 2px solid $color-purplea2;
+      width: 50%;
+      justify-content: center;
+    }
+
+    &-bar {
+      display: inline-block;
+    }
+  }
+
+  /* Mobile: width < 740px */
+  @media only screen and (max-width: 46.1875em) {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &-close {
+      top: 30px;
+      right: 30px;
+    }
+
+    &-menu {
+      width: 80%;
+    }
+
+    &-link {
+      font-size: 20px;
+    }
+  }
+}

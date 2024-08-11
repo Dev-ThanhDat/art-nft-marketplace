@@ -1,0 +1,126 @@
+.discover {
+  padding: 80px 0;
+
+  &-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &-top-btn {
+    background-color: transparent;
+    border: 2px solid $color-purplea2;
+
+    img {
+      width: 20px;
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 30px;
+  }
+  &-item {
+    background-color: $color-grey3b;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.2s linear;
+
+    &:hover {
+      @include scale();
+    }
+  }
+
+  &-img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+
+  &-content {
+    padding: 20px 30px;
+    color: $color-white;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    margin-bottom: 25px;
+
+    img {
+      width: 24px;
+      border-radius: 120px;
+    }
+
+    span {
+      font-family: $font-secondary;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  &-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-highest,
+  &-price {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    color: $color-grey85;
+    p {
+      font-family: $font-secondary;
+      font-weight: 400;
+      line-height: 140%;
+      color: $color-white;
+    }
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    &-list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 30px;
+    }
+  }
+
+  /* Mobile: width < 740px */
+  @media only screen and (max-width: 46.1875em) {
+    padding: 40px 0;
+
+    &-top {
+      flex-direction: column;
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    &-top-btn {
+      margin-top: 40px;
+      justify-content: center;
+    }
+
+    &-list {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px 0;
+    }
+  }
+}
